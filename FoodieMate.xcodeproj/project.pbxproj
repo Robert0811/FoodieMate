@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E17D825E2DE92AC60000B225 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E17D825D2DE92AC60000B225 /* MobileNetV2.mlmodel */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E1C88F532DE820E3001FC672 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,25 +28,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E17D825D2DE92AC60000B225 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		E1C88F442DE820E2001FC672 /* FoodieMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodieMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C88F522DE820E3001FC672 /* FoodieMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C88F5C2DE820E3001FC672 /* FoodieMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E1764F2E2DEA2DA500E1CBE1 /* Exceptions for "FoodieMate" folder in "FoodieMate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				Tests/FoodieMateTests/FoodieMateTests.swift,
+				Tests/FoodieMateUITests/FoodieMateUITests.swift,
+				Tests/FoodieMateUITests/FoodieMateUITestsLaunchTests.swift,
+			);
+			target = E1C88F432DE820E2001FC672 /* FoodieMate */;
+		};
+		E1764F7B2DEA941000E1CBE1 /* Exceptions for "FoodieMate" folder in "FoodieMateTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/FoodieMateTests/FoodieMateTests.swift,
+			);
+			target = E1C88F512DE820E3001FC672 /* FoodieMateTests */;
+		};
+		E1764F812DEA941600E1CBE1 /* Exceptions for "FoodieMate" folder in "FoodieMateUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/FoodieMateUITests/FoodieMateUITests.swift,
+				Tests/FoodieMateUITests/FoodieMateUITestsLaunchTests.swift,
+			);
+			target = E1C88F5B2DE820E3001FC672 /* FoodieMateUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E1C88F462DE820E2001FC672 /* FoodieMate */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E1764F2E2DEA2DA500E1CBE1 /* Exceptions for "FoodieMate" folder in "FoodieMate" target */,
+				E1764F7B2DEA941000E1CBE1 /* Exceptions for "FoodieMate" folder in "FoodieMateTests" target */,
+				E1764F812DEA941600E1CBE1 /* Exceptions for "FoodieMate" folder in "FoodieMateUITests" target */,
+			);
 			path = FoodieMate;
-			sourceTree = "<group>";
-		};
-		E1C88F552DE820E3001FC672 /* FoodieMateTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FoodieMateTests;
-			sourceTree = "<group>";
-		};
-		E1C88F5F2DE820E3001FC672 /* FoodieMateUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FoodieMateUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,9 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				E1C88F462DE820E2001FC672 /* FoodieMate */,
-				E1C88F552DE820E3001FC672 /* FoodieMateTests */,
-				E1C88F5F2DE820E3001FC672 /* FoodieMateUITests */,
 				E1C88F452DE820E2001FC672 /* Products */,
+				E17D825D2DE92AC60000B225 /* MobileNetV2.mlmodel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,8 +138,6 @@
 				E1C88F462DE820E2001FC672 /* FoodieMate */,
 			);
 			name = FoodieMate;
-			packageProductDependencies = (
-			);
 			productName = FoodieMate;
 			productReference = E1C88F442DE820E2001FC672 /* FoodieMate.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +146,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1C88F692DE820E3001FC672 /* Build configuration list for PBXNativeTarget "FoodieMateTests" */;
 			buildPhases = (
+				B8B32DAEA91DE65286799717 /* [CP] Check Pods Manifest.lock */,
 				E1C88F4E2DE820E3001FC672 /* Sources */,
 				E1C88F4F2DE820E3001FC672 /* Frameworks */,
 				E1C88F502DE820E3001FC672 /* Resources */,
@@ -130,12 +156,7 @@
 			dependencies = (
 				E1C88F542DE820E3001FC672 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				E1C88F552DE820E3001FC672 /* FoodieMateTests */,
-			);
 			name = FoodieMateTests;
-			packageProductDependencies = (
-			);
 			productName = FoodieMateTests;
 			productReference = E1C88F522DE820E3001FC672 /* FoodieMateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1C88F6C2DE820E3001FC672 /* Build configuration list for PBXNativeTarget "FoodieMateUITests" */;
 			buildPhases = (
+				D306DB2348EB16E497F4B60E /* [CP] Check Pods Manifest.lock */,
 				E1C88F582DE820E3001FC672 /* Sources */,
 				E1C88F592DE820E3001FC672 /* Frameworks */,
 				E1C88F5A2DE820E3001FC672 /* Resources */,
@@ -153,12 +175,7 @@
 			dependencies = (
 				E1C88F5E2DE820E3001FC672 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				E1C88F5F2DE820E3001FC672 /* FoodieMateUITests */,
-			);
 			name = FoodieMateUITests;
-			packageProductDependencies = (
-			);
 			productName = FoodieMateUITests;
 			productReference = E1C88F5C2DE820E3001FC672 /* FoodieMateUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -231,11 +248,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B8B32DAEA91DE65286799717 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodieMateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D306DB2348EB16E497F4B60E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodieMateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1C88F402DE820E2001FC672 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17D825E2DE92AC60000B225 /* MobileNetV2.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = FoodieMate/Info.plist;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -376,6 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = FoodieMate/Info.plist;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -391,8 +458,10 @@
 				CODE_SIGN_ENTITLEMENTS = FoodieMate/FoodieMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4L7686FNQ;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodieMate/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -404,8 +473,8 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "\"$(inherited) @executable_path/Frameworks\"";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "\"$(inherited) @executable_path/Frameworks\"";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roberttrifan.FoodieMate;
@@ -428,8 +497,10 @@
 				CODE_SIGN_ENTITLEMENTS = FoodieMate/FoodieMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4L7686FNQ;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodieMate/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -441,8 +512,8 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "\"$(inherited) @executable_path/Frameworks\"";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "\"$(inherited) @executable_path/Frameworks\"";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roberttrifan.FoodieMate;
